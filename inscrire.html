@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Hello Javascript</title>
+      <link rel="stylesheet" href="css/index.css">
+      <script type = "text/javascript">
+         function validateForm()  {
+             var u = document.getElementById("username").value;
+             var p = document.getElementById("password").value;
+ 
+             if(u== "") {
+                 alert("Please enter your Username");
+                 return false;
+             }
+             if(p == "") {
+                 alert("Please enter you Password");
+                 return false;
+             }
+ 
+             alert("All datas are valid!, send it to the server!")
+ 
+             return true;
+         }
+      </script>
+   </head>
+   <body bgcolor="orange">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+ <center>
+      <h2><font color="red"><marquee>Entrer votre username et password</marquee></font></h2>
+ 
+      <div style="border:1px solid #ddd; padding: 5px;">
+         <form method="GET" action="index.html" onsubmit = "return validateForm()">
+            Username: <input type="text" name="username" id="username"/>
+            <br><br>
+            Password: <input type="password" name = "password" id="password"/>
+            <br><br>
+            <center>
+            <button type="submit">Submit</button>
+            </center>
+         </form>
+      </div>
+  </center>
+  <div>
+  <footer id="main_footer">
+    <p>&copy; 2021  Ibrahima ka copyrigth bonjour</p>
+    </footer>
+    </div>
+   </body>
+</html>

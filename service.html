@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de reservation d'hotel et de billet </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script type = "text/javascript">
+        function validateForm()  {
+            var u = document.getElementById("username").value;
+            var p = document.getElementById("date").value;
+            var c = document.getElementById("tel").value;
+            var d = document.getElementById("cat").value;
+
+            if(u== "") {
+                alert("Please enter your Username");
+                return false;
+            }
+            if(p == "") {
+                alert("Please enter your date");
+                return false;
+            }
+            if(c == "") {
+                alert("Please enter your telephone");
+                return false;
+            }
+            if(d == "") {
+                alert("Please enter your vol");
+                return false;
+            }
+
+            alert("All datas are valid!, send it to the server! thank you your reservation is ok ")
+
+            return true;
+        }
+     </script>
+</head>
+<!--Creation de notre menu avec un  logo  -->
+<header>
+        <div class="menu">
+            
+            <ul>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <div>
+                    <img src="image/logo.jpg" alt="" width="30" height="30">
+                    <h1>LEADTHEROAD</h1>
+                 
+                </div>
+            </ul>
+            
+        
+ 
+    </div>
+</header>
+<body>
+ <!--Creation d'une petite description -->
+ <!--Proposition des services-->
+ <div class="reserv">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <h2><u><strong><center>reservation pour tous types de billet</center></strong></u></h2>
+  <!--Creation des images avec cadrage-->
+  <div class="img">
+    <a href="http://www.texas.com"><img src="image/1.jpg" alt="" width="100" height="100"> Texas</a>
+    <a href="http://www.new-york.com"><img src="image/2.jpg" alt="" width="100" height="100"> new-york</a>
+    <a href="http://www.texas.com"><img src="image/1.jpg" alt="" width="100" height="100">Texas</a>
+    <a href="http://www.new-york.com"><img src="image/2.jpg" alt="" width="100" height="100">new-york</a>
+    
+    <a href="http://www.texas.com"><img src="image/1.jpg" alt="" width="100" height="100">Texas</a>
+    <a href="http://www.new-york.com"><img src="image/2.jpg" alt="" width="100" height="100"> new-york</a>
+    
+    <a href="http://www.united-states.com"><img src="image/blog-voyage-hotel-luxe.jpg" alt="" width="100" height="100"> Amerique</a>
+</div> 
+
+</div>
+<div>
+    <h2><u><strong><center>Pour vos assistance Visa</center></strong></u></h2>
+</div>
+<img src="image/slide.jpg" alt="" width="1339" height="500">
+<div>
+    <h2><u><strong><center>reservation hotels</center></strong></u></h2>
+    <center>
+        <h2><font color="red"><marquee>Faites vos reservations d'hotel dans cette formulaire</marquee></font></h2>
+   
+        <div style="border:1px solid #ddd; padding: 5px;" class="for">
+           <form method="GET" action="index.html" onsubmit = "return validateForm()">
+              Username: <input type="text" name="username" id="username"/>
+              <br><br>
+              date: <input type="date" name = "date" id="date"/>
+              <br><br>
+              telephone: <input type="text" name = "tel" id="tel"/>
+              <br><br>
+              type vole: <input type="text" name = "cat" id="cat"/>
+              <br><br>
+              <center>
+              <button type="submit">Submit</button>
+              </center>
+           </form>
+        </div>
+    </center>
+</div>
+</body>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<div>
+<footer id="main_footer">
+<p>&copy; 2021  Ibrahima ka copyrigth </p>
+</footer>
+</div>
+</html>
